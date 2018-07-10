@@ -1,0 +1,5 @@
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Model.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Model.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.csprojResolveAssemblyReference.cache
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.pdb

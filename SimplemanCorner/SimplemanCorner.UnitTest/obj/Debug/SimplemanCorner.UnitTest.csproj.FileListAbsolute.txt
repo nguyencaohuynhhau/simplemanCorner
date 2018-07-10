@@ -1,0 +1,7 @@
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\bin\Debug\SimplemanCorner.UnitTest.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\bin\Debug\SimplemanCorner.UnitTest.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\obj\Debug\SimplemanCorner.UnitTest.csprojResolveAssemblyReference.cache
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\obj\Debug\SimplemanCorner.UnitTest.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.UnitTest\obj\Debug\SimplemanCorner.UnitTest.pdb
