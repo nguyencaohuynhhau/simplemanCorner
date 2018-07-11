@@ -1,5 +1,13 @@
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Service.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Service.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Common.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Data.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Model.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\EntityFramework.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Common.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Data.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Model.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\EntityFramework.xml
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.csprojResolveAssemblyReference.cache
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.pdb

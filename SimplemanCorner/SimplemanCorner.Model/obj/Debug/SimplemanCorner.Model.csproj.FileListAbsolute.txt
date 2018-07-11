@@ -1,5 +1,12 @@
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Model.dll.config
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Model.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Model.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\EntityFramework.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Common.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\SimplemanCorner.Common.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\EntityFramework.xml
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\bin\Debug\EntityFramework.SqlServer.xml
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.csprojResolveAssemblyReference.cache
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Model\obj\Debug\SimplemanCorner.Model.pdb

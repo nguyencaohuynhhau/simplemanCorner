@@ -40,7 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorService.cs" />
+    <Compile Include="PostCategoryService.cs" />
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimplemanCorner.Common\SimplemanCorner.Common.csproj">
+      <Project>{181b8d6b-cbf2-4ebd-9fbf-e3c038b842ee}</Project>
+      <Name>SimplemanCorner.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimplemanCorner.Data\SimplemanCorner.Data.csproj">
+      <Project>{303bda82-7f67-4088-b895-68b10ec0255a}</Project>
+      <Name>SimplemanCorner.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimplemanCorner.Model\SimplemanCorner.Model.csproj">
+      <Project>{5f2fe4cf-a6a9-4093-bdd2-e3c99e5814b1}</Project>
+      <Name>SimplemanCorner.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
