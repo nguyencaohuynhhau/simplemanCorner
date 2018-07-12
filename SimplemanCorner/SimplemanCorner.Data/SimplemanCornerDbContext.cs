@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -8,7 +9,7 @@ using SimplemanCorner.Model.Models;
 
 namespace SimplemanCorner.Data
 {
-    public class SimplemanCornerDbContext : DbContext
+    public class SimplemanCornerDbContext : IdentityDbContext<ApplicationUser>
     {
         public SimplemanCornerDbContext() : base("SimplemanCornerConnection")
         {
@@ -34,17 +35,17 @@ namespace SimplemanCorner.Data
 
         public DbSet<Tag> Tags { set; get; }
 
-   
+
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
         public DbSet<Error> Errors { set; get; }
-        //public DbSet<ContactDetail> ContactDetails { set; get; }
+        public DbSet<ContactDetail> ContactDetails { set; get; }
         //public DbSet<Feedback> Feedbacks { set; get; }
 
-        //public DbSet<ApplicationGroup> ApplicationGroups { set; get; }
-        //public DbSet<ApplicationRole> ApplicationRoles { set; get; }
-        //public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
-        //public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
+        public DbSet<ApplicationGroup> ApplicationGroups { set; get; }
+        public DbSet<ApplicationRole> ApplicationRoles { set; get; }
+        public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
+        public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
 
         public static SimplemanCornerDbContext Create()
         {
@@ -53,10 +54,11 @@ namespace SimplemanCorner.Data
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-            //builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");
-            //builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId).ToTable("ApplicationUserLogins");
-            //builder.Entity<IdentityRole>().ToTable("ApplicationRoles");
-            //builder.Entity<IdentityUserClaim>().HasKey(i => i.UserId).ToTable("ApplicationUserClaims");
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId).ToTable("ApplicationUserLogins");
+            builder.Entity<IdentityRole>().ToTable("ApplicationRoles");
+            builder.Entity<IdentityUserClaim>().HasKey(i => i.UserId).ToTable("ApplicationUserClaims");
+
         }
     }
 }

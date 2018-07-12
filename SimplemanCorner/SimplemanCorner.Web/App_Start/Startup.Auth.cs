@@ -26,8 +26,7 @@ namespace SimplemanCorner.Web.App_Start
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(SimplemanCornerDbContext.Create);
-
+            //app.CreatePerOwinContext(SimplemanCornerDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
             app.CreatePerOwinContext<UserManager<ApplicationUser>>(CreateManager);
@@ -106,19 +105,19 @@ namespace SimplemanCorner.Web.App_Start
                 }
                 //if (user != null)
                 //{
-                //    var applicationGroupService = ServiceFactory.Get<IApplicationGroupService>();
-                //    var listGroup = applicationGroupService.GetListGroupByUserId(user.Id);
-                //    if (listGroup.Any(x => x.Name == CommonConstants.Administrator))
+                //    var applicationgroupservice = servicefactory.get<iapplicationgroupservice>();
+                //    var listgroup = applicationgroupservice.getlistgroupbyuserid(user.id);
+                //    if (listgroup.any(x => x.name == commonconstants.administrator))
                 //    {
-                //        ClaimsIdentity identity = await userManager.CreateIdentityAsync(
+                //        claimsidentity identity = await usermanager.createidentityasync(
                 //                       user,
-                //                       DefaultAuthenticationTypes.ExternalBearer);
-                //        context.Validated(identity);
+                //                       defaultauthenticationtypes.externalbearer);
+                //        context.validated(identity);
                 //    }
                 //    else
                 //    {
-                //        context.Rejected();
-                //        context.SetError("invalid_group", "Bạn không phải là admin");
+                //        context.rejected();
+                //        context.seterror("invalid_group", "bạn không phải là admin");
                 //    }
 
                 //}

@@ -66,4 +66,4 @@
             });
         }
     }
-})(angular.module('tedushop.common'));
+})(angular.module('SimplemanCorner.common'));
