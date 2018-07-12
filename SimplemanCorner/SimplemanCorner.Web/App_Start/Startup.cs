@@ -17,7 +17,7 @@ using SimplemanCorner.Model.Models;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.DataProtection;
 using System.Web;
-//test
+//test lan 2
 [assembly: OwinStartup(typeof(SimplemanCorner.Web.App_Start.Startup))]
 
 namespace SimplemanCorner.Web.App_Start
