@@ -2,3 +2,12 @@ F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\Simp
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.pdb
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.pdb
+C:\Users\WS012.WORLDSOFT\Source\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.dll
+C:\Users\WS012.WORLDSOFT\Source\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.pdb
+C:\Users\WS012.WORLDSOFT\Source\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.csprojResolveAssemblyReference.cache
+C:\Users\WS012.WORLDSOFT\Source\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.dll
+C:\Users\WS012.WORLDSOFT\Source\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.pdb
+D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.dll
+D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.pdb
+D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.dll
+D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.pdb
