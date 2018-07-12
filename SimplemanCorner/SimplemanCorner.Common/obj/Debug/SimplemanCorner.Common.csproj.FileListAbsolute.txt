@@ -11,3 +11,4 @@ D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\S
 D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\bin\Debug\SimplemanCorner.Common.pdb
 D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.dll
 D:\Data\Repos\simplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Common\obj\Debug\SimplemanCorner.Common.csprojResolveAssemblyReference.cache
