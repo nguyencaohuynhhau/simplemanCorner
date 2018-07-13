@@ -26,7 +26,7 @@ namespace SimplemanCorner.Web.App_Start
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            //app.CreatePerOwinContext(SimplemanCornerDbContext.Create);
+            app.CreatePerOwinContext(SimplemanCornerDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
             app.CreatePerOwinContext<UserManager<ApplicationUser>>(CreateManager);

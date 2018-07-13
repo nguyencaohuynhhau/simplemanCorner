@@ -66,4 +66,4 @@
             });
         }
     }
-})(angular.module('SimplemanCorner.common'));
+})(angular.module('simplemancorner.common'));

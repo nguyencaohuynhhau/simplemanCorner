@@ -3,11 +3,11 @@
 (function () {
     angular.module('simplemancorner',
         ['simplemancorner.products',
-         'simplemancorner.application_groups',
+         //'simplemancorner.application_groups',
          'simplemancorner.product_categories',
-         'simplemancorner.application_roles',
-         'simplemancorner.application_users',
-           'simplemancorner.statistics',
+         //'simplemancorner.application_roles',
+         //'simplemancorner.application_users',
+           //'simplemancorner.statistics',
          'simplemancorner.common'])
         .config(config)
         .config(configAuthentication);
