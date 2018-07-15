@@ -247,3 +247,5 @@ F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\bin\System.Web.Ht
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\obj\Debug\SimplemanCorner.Web.csprojResolveAssemblyReference.cache
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\obj\Debug\SimplemanCorner.Web.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\obj\Debug\SimplemanCorner.Web.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\bin\System.Web.Http.Owin.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Web\bin\System.Web.Http.Owin.xml

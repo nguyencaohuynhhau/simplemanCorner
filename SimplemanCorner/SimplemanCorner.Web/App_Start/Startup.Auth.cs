@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
+
 using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
+//using Microsoft.Owin.Security.Cookies;
 //using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
@@ -10,11 +11,12 @@ using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-//using SimplemanCorner.Common;
+using SimplemanCorner.Common;
 using SimplemanCorner.Data;
 using SimplemanCorner.Model.Models;
 using SimplemanCorner.Service;
 using SimplemanCorner.Web.Infrastructure.Core;
+
 
 [assembly: OwinStartup(typeof(SimplemanCorner.Web.App_Start.Startup))]
 
@@ -29,8 +31,8 @@ namespace SimplemanCorner.Web.App_Start
             app.CreatePerOwinContext(SimplemanCornerDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
-            app.CreatePerOwinContext<UserManager<ApplicationUser>>(CreateManager);
 
+            app.CreatePerOwinContext<UserManager<ApplicationUser>>(CreateManager);
             app.UseOAuthAuthorizationServer(new OAuthAuthorizationServerOptions
             {
                 TokenEndpointPath = new PathString("/oauth/token"),
@@ -40,22 +42,6 @@ namespace SimplemanCorner.Web.App_Start
 
             });
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
-
-            // Configure the sign in cookie
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
-            {
-                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/dang-nhap.html"),
-                Provider = new CookieAuthenticationProvider
-                {
-                    // Enables the application to validate the security stamp when the user logs in.
-                    // This is a security feature which is used when you change a password or add an external login to your account.  
-                    OnValidateIdentity = SecurityStampValidator.OnValidateIdentity<ApplicationUserManager, ApplicationUser>(
-                        validateInterval: TimeSpan.FromMinutes(30),
-                        regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager, DefaultAuthenticationTypes.ApplicationCookie))
-                }
-            });
-            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
@@ -67,13 +53,13 @@ namespace SimplemanCorner.Web.App_Start
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "1724156397871880",
-            //   appSecret: "398039cc7588d52f87a7adcefecc3210");
+            //   appId: "",
+            //   appSecret: "");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
-            //    ClientId = "712161982861-4d9bdgfvf6pti1vviifjogopqdqlft56.apps.googleusercontent.com",
-            //    ClientSecret = "T0cgiSG6Gi7BKMr-fCCkdErO"
+            //    ClientId = "",
+            //    ClientSecret = ""
             //});
         }
         public class AuthorizationServerProvider : OAuthAuthorizationServerProvider
@@ -103,29 +89,18 @@ namespace SimplemanCorner.Web.App_Start
                     context.Rejected();
                     return;
                 }
-                //if (user != null)
-                //{
-                //    var applicationgroupservice = servicefactory.get<iapplicationgroupservice>();
-                //    var listgroup = applicationgroupservice.getlistgroupbyuserid(user.id);
-                //    if (listgroup.any(x => x.name == commonconstants.administrator))
-                //    {
-                //        claimsidentity identity = await usermanager.createidentityasync(
-                //                       user,
-                //                       defaultauthenticationtypes.externalbearer);
-                //        context.validated(identity);
-                //    }
-                //    else
-                //    {
-                //        context.rejected();
-                //        context.seterror("invalid_group", "bạn không phải là admin");
-                //    }
-
-                //}
-                //else
-                //{
-                //    context.SetError("invalid_grant", "Tài khoản hoặc mật khẩu không đúng.'");
-                //    context.Rejected();
-                //}
+                if (user != null)
+                {
+                    ClaimsIdentity identity = await userManager.CreateIdentityAsync(
+                                                           user,
+                                                           DefaultAuthenticationTypes.ExternalBearer);
+                    context.Validated(identity);
+                }
+                else
+                {
+                    context.SetError("invalid_grant", "Tài khoản hoặc mật khẩu không đúng.'");
+                    context.Rejected();
+                }
             }
         }
 

@@ -11,11 +11,14 @@ namespace SimplemanCorner.Data
 {
     public class SimplemanCornerDbContext : IdentityDbContext<ApplicationUser>
     {
-        public SimplemanCornerDbContext() : base("SimplemanCornerConnection")
+        public SimplemanCornerDbContext() : base("TeduShopConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
-
+        public static SimplemanCornerDbContext Create()
+        {
+            return new SimplemanCornerDbContext();
+        }
         public DbSet<Footer> Footers { set; get; }
         public DbSet<Menu> Menus { set; get; }
         public DbSet<MenuGroup> MenuGroups { set; get; }
@@ -40,17 +43,14 @@ namespace SimplemanCorner.Data
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
         public DbSet<Error> Errors { set; get; }
         public DbSet<ContactDetail> ContactDetails { set; get; }
-        //public DbSet<Feedback> Feedbacks { set; get; }
+        public DbSet<Feedback> Feedbacks { set; get; }
 
         public DbSet<ApplicationGroup> ApplicationGroups { set; get; }
         public DbSet<ApplicationRole> ApplicationRoles { set; get; }
         public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
         public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
 
-        public static SimplemanCornerDbContext Create()
-        {
-            return new SimplemanCornerDbContext();
-        }
+
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {

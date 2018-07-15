@@ -41,3 +41,6 @@ F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\Mic
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.csprojResolveAssemblyReference.cache
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.dll
 F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\obj\Debug\SimplemanCorner.Service.pdb
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\SimplemanCorner.Service.dll.config
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\EntityFramework.SqlServer.dll
+F:\Lam\MVC\SimplemanCorner\SimplemanCorner\SimplemanCorner.Service\bin\Debug\EntityFramework.SqlServer.xml

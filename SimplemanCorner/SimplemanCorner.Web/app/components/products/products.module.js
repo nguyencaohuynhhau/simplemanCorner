@@ -17,11 +17,11 @@
                 parent: 'base',
                 templateUrl: "/app/components/products/productAddView.html",
                 controller: "productAddController"})
-             //       .state('product_edit', {
-            //    url: "/product_edit/:id",
-            //    parent: 'base',
-            //    templateUrl: "/app/components/products/productEditView.html",
-            //    controller: "productEditController"
-            //});
+                    .state('product_edit', {
+                url: "/product_edit/:id",
+                parent: 'base',
+                templateUrl: "/app/components/products/productEditView.html",
+                controller: "productEditController"
+            });
     }
 })();
